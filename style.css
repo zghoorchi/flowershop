@@ -1,0 +1,113 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span{
+    color: var(--pink);
+}
+header nav a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color:#666;
+}
+header nav a:hover{
+    color: var(--pink);
+}
+header .icons a{
+    font-size: 3rem;
+    color:#333;
+    margin-left: 2rem;
+
+}
+header .icons a:hover{
+    color: var(--pink);
+}
+header input{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.3rem);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* media quries */
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background:#eee;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+       
+    }
+    header #toggler:checked ~ nav{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+    header nav a{
+        display: block;
+        padding: 2rem;
+        border: 0.1rem solid rgba(0,0,0,0.1);
+        margin: 2rem;
+        background-color: #fff;
+    }
+}
+@media(max-width:450px){
+html{
+    font-size: 50%;
+
+}
+}
