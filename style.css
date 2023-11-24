@@ -174,8 +174,39 @@ margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
 }
+.icons-container{
+    display: flex;
+    background-color: #ddd;
+   gap: 2rem;
+   margin: 0 auto;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   flex-wrap: wrap;
+}
+.icons-container .icons{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+    background-color: #fff;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+    padding: 2rem;
 
-
+}
+.icons-container .icons img{
+    height: 5rem;
+    width: 60px;
+    margin-right: 5rem;
+}
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color:#555;
+    font-size: 1.5rem;
+}
 
 
 /* media quries */
@@ -226,6 +257,11 @@ margin-bottom: 2rem;
     .about .row{
         padding: 2rem 3rem;
     }
+    .icons-container .icons h3{
+        padding: 0.5rem;
+    }
+  
+  
   
 }
 @media(max-width:450px){
