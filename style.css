@@ -121,6 +121,9 @@ color:var(--pink);
 padding: 1rem;
 margin: 2rem 0;
 }
+.heading span{
+    color: #333;
+}
 .about span{
     color:#333;
 }
@@ -347,7 +350,105 @@ color: #d7d5d5;
  margin-left: 13rem;
 }
 
+.contact .contact-container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    
+}
+.contact .contact-container .info-box{
+    flex: 1 1 40rem;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    margin: 4rem 3rem;
+    padding: 2rem;
+    
+}
+.contact .contact-container .info-box input{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    display: block;
+    color: #ddd;
+    font-size: 2rem;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+.contact .contact-container .info-box .box1:focus{
+    border-color: var(--pink);
+}
 
+.contact .contact-container .info-box textarea{
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    margin-bottom: 2.5rem;
+}
+.contact .contact-container .info-box .link{
+    background-color: #545151;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 3.5rem;
+    color: #fff;
+   
+}
+.contact .contact-container .info-box .link:hover{
+    background-color: var(--pink);
+}
+.contact .contact-container img{
+    width: 80rem;
+    height: 65rem;
+    object-fit: cover;
+    flex: 1 1 40rem;
+    border-radius: 1rem;
+    margin: 4rem 2.5rem;
+    filter: blur(80%);
+    margin-right: 2rem;
+    height: 100;
+}
+.footer .map{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+.footer .map .map-1{
+    display: flex;
+    
+    flex-direction:column;
+    margin-right: 2rem;
+   
+    flex: 1 1 30rem;
+    height: 25rem;
+    font-size: 1.5rem;
+    
+}
+.footer .map .map-1 h2{
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+}
+.footer .map .map-1 a{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #666;
+}
+.footer .map .map-1 a:hover{
+    text-decoration: underline;
+    color: var(--pink);
+}
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    border-top: 0.1rem solid rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+.footer .credit span{
+    color: var(--pink);
+}
 /* media quries */
 
 @media (max-width:991px){
@@ -358,6 +459,7 @@ color: #d7d5d5;
         padding: 4rem;
         
     }
+   
 }
 @media(max-width:768px){
     .product .box-container{
