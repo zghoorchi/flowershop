@@ -207,8 +207,94 @@ margin-bottom: 2rem;
     color:#555;
     font-size: 1.5rem;
 }
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.product .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    position: relative;
+}
+.product .box-container .box .discount{
+    position: absolute;
+    top: 0;
+    color: var(--pink);
+    background-color: #db9fbc;
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+    padding: 0.5rem;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+.product .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.product .box-container .box .image img{
+    height: 25rem;
+}
+.product .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.product .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+  
+}
+.product .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+.product .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background-color: var(--pink);
+    color: #fff;
+}
+.product .box-container .box .image .icons .cart-btn{
+    border-left: 0.1rem solid #fff7;
+    border-right: 0.1rem solid #fff7;
+    width: 100%;
 
-
+}
+.product .box-container .box .image .icons a:hover{
+    background-color: #333;
+}
+.product .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.product .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.product .box-container .box .content .price{
+    font-size: 2.5rem;
+    color:var(--pink);
+    font-weight: bold;
+    padding-top: 1rem;
+}
+.product .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration:line-through;
+}
+.image img{
+    width: 300px;
+    /* height: 250px; */
+}
 /* media quries */
 
 @media (max-width:991px){
@@ -221,6 +307,9 @@ margin-bottom: 2rem;
     }
 }
 @media(max-width:768px){
+    .product .box-container{
+        padding: 0 2rem;
+    }
     html{
         font-size: 50%;
     }
@@ -268,6 +357,9 @@ margin-bottom: 2rem;
 html{
     font-size: 45%;
 
+}
+.product .box-container{
+    padding: 0 2rem;
 }
 .heading{
     font-size: 3rem;
